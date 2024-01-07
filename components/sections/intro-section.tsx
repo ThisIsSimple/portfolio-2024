@@ -81,8 +81,7 @@ export const IntroSection = () => {
           <p className="font-coding mb-4">
             짧은 기간 안에 아이디어를 구상하고 개발할 수 있으며,
             <br />
-            사업성을 끌어내어 어떻게 하면{" "}
-            <ShiningText text="아이템을 매력적으로 바꿀 수 있을지 고민" />
+            <ShiningText text="아이템을 매력적으로 보여주기 위해 고민" />
             하는 것을 좋아합니다.
           </p>
         </div>
