@@ -1,5 +1,6 @@
 import { Project } from "@/types";
 import { CustomMarkdown } from "../markdown/custom";
+import Image from "next/image";
 
 export const ProjectDetail = (props: Project) => {
   const {
@@ -32,7 +33,18 @@ export const ProjectDetail = (props: Project) => {
       <header className="mb-4">
         <h1 className="font-bold text-lg">작품소개</h1>
       </header>
-      <CustomMarkdown text={description} />
+      {thumbnail ? (
+        <Image
+          src={thumbnail}
+          alt={title}
+          width={1000}
+          height={1000}
+          className="mb-5"
+        />
+      ) : null}
+      <div className="mb-5">
+        <CustomMarkdown text={description} />
+      </div>
       {youtube_link ? (
         <div className="aspect-video rounded-2xl overflow-hidden">
           <iframe

@@ -8,7 +8,7 @@ export const CustomMarkdown = ({ text }: { text: string }) => {
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{
-        h1: (props) => <h1 className="font-bold text-3xl mt-4 mb-2">{props.children}</h1>,
+        h1: (props) => <h1 className="font-bold text-3xl mt-4 mb-4">{props.children}</h1>,
         h2: (props) => <h2 className="font-bold text-xl mt-3 mb-2">{props.children}</h2>,
         h3: (props) => <h3 className="font-bold text-lg mt-2 mb-2">{props.children}</h3>,
         p: (props) => <p className="leading-8">{props.children}</p>,
