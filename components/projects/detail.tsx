@@ -1,6 +1,5 @@
 import { Project } from "@/types";
 import { CustomMarkdown } from "../markdown/custom";
-import Image from "next/image";
 
 export const ProjectDetail = (props: Project) => {
   const {
