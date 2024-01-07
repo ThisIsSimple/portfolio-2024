@@ -1,59 +1,12 @@
-import Link from "next/link";
-import { HireMe } from "../main/hire-me";
 import { ShiningText } from "../intro/shining-text";
 import Image from "next/image";
+import { CodeCard } from "../intro/code-card";
 
 export const IntroSection = () => {
   return (
     <>
       <section className="h-screen p-5 md:p-10 flex justify-center items-center">
-        <div className="max-w-[650px] w-full mx-auto rounded-3xl overflow-hidden shadow-lg">
-          <div className="px-5 py-3 flex gap-3 bg-zinc-800">
-            <div className="bg-red-500 w-4 h-4 rounded-full" />
-            <div className="bg-gray-500 w-4 h-4 rounded-full" />
-            <div className="bg-green-500 w-4 h-4 rounded-full" />
-          </div>
-          <div className="font-coding p-5 md:p-10 bg-zinc-900 text-xl leading-8">
-            <p className="text-comment">// Who am I?</p>
-            <article className="">
-              <span className="text-let">const</span>{" "}
-              <span className="text-var-name">name</span> ={" "}
-              <span className="text-json">"전윤민"</span>; <br className="block md:hidden" /><HireMe />
-            </article>
-            <br />
-            <article>
-              <span className="text-let">const</span>{" "}
-              <span className="text-var-name">info</span>
-              <span> = </span>
-              <span>{"{"}</span>
-              <p className="pl-5 text-json">
-                "💌": "cordelia273@kakao.com",
-                <br />
-                "🏠":{" "}
-                <Link
-                  href="https://blog.cordelia273.space"
-                  className="text-blue-500 hover:text-blue-800 transition"
-                >
-                  "blog.cordelia273.space",
-                </Link>
-                <br />
-                "📞": "010-2966-9682",
-                <br />
-              </p>
-              <span>{"}"}</span>
-            </article>
-            <p>
-              <br />
-              <span className="text-comment">// I won't</span>
-              <br />
-              <span className="text-let">let </span>
-              <span className="text-var-name">you</span>
-              <span> = </span>
-              <span className="text-string">"DOWN"</span>
-              <span>;</span>
-            </p>
-          </div>
-        </div>
+        <CodeCard />
       </section>
       <section className="px-5 md:px-10 pb-5 md:pb-10 grid grid-cols-1 md:grid-cols-[250px__1fr] gap-5 md:p-10">
         <Image
