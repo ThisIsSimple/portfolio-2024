@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        coding: "JetbrainsMono",
+        coding: "JetBrains Mono",
       },
       colors: {
         todo: "#49FF00",

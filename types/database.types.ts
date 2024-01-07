@@ -116,7 +116,9 @@ export interface Database {
           description: string
           github_link: string | null
           id: number
+          is_main: boolean
           is_published: boolean
+          order: number
           slug: string
           summary: string
           thumbnail: string | null
@@ -129,7 +131,9 @@ export interface Database {
           description: string
           github_link?: string | null
           id?: number
+          is_main?: boolean
           is_published?: boolean
+          order?: number
           slug: string
           summary: string
           thumbnail?: string | null
@@ -142,7 +146,9 @@ export interface Database {
           description?: string
           github_link?: string | null
           id?: number
+          is_main?: boolean
           is_published?: boolean
+          order?: number
           slug?: string
           summary?: string
           thumbnail?: string | null

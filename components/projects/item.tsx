@@ -195,7 +195,11 @@ export const ProjectItem = (props: ProjectItemProps) => {
               ) : null
             )}
           </div>
-          <div className="absolute rounded-full px-2 py-1 bg-white bg-opacity-75 left-2 top-2 text-xs shadow">
+          <div
+            className={`absolute rounded-full px-2 py-1 bg-white bg-opacity-75 left-2 text-xs shadow transition ${
+              showDetail ? "top-12" : "top-2"
+            }`}
+          >
             {year}
           </div>
         </motion.div>
