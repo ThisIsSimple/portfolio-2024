@@ -21,9 +21,9 @@ export const ProjectSection = async () => {
   ).data;
 
   return (
-    <section className="p-5">
+    <section className="p-5 md:p-10">
       <header className="mb-5">
-        <h2 className="font-bold text-2xl pl-5">Projects</h2>
+        <h2 className="font-bold text-2xl">Projects</h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-[200px__1fr] gap-5">
         <nav className="flex md:flex-col gap-4 bg-zinc-900 p-5 rounded-xl h-fit overflow-x-auto md:overflow-x-hidden">
